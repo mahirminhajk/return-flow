@@ -1,0 +1,22 @@
+meta {
+  name: create-user
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/v1/admin/create-user
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "new test",
+    "phone": "919876540746",
+    "password": "123456789",
+    "invested": 10000,
+    "returnAmount": 200,
+    "investedDate": "2025-01-01"
+  }
+}

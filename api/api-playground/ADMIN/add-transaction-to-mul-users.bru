@@ -1,0 +1,21 @@
+meta {
+  name: add-transaction-to-mul-users
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:3000/api/v1/admin/transaction/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "userIds": ["6797c2a2d558024c9295521e", "678f89b6be11214b0576a641"],
+    "type": "DEBIT",
+    "label": "WITHDRAWAL",
+    "amount": 100,
+    "description": "hello mutliple transaction."
+  }
+}

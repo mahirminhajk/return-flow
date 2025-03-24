@@ -1,0 +1,18 @@
+meta {
+  name: update-transaction-status
+  type: http
+  seq: 3
+}
+
+patch {
+  url: http://localhost:3000/api/v1/admin/transaction/status
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "transactionId": "677ebf0ca7e53ae9d6fd8c28",
+    "status": "ACCEPTED"
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: get-user
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3000/api/v1/admin/user/6797c2a2d558024c9295521e
+  body: none
+  auth: none
+}
+
+body:json {
+  {
+    "name": "new test",
+    "phone": "918086009803",
+    "password": "123456789",
+    "invested": 10000,
+    "returnAmount": 200,
+    "investedDate": "2025-01-01"
+  }
+}

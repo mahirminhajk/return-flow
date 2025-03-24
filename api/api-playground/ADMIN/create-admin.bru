@@ -1,0 +1,19 @@
+meta {
+  name: create-admin
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/v1/admin/create-admin
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "newadmin",
+    "phone": "917293338403",
+    "password": "123456789"
+  }
+}

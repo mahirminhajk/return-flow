@@ -1,0 +1,18 @@
+meta {
+  name: request-withdraw
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/v1/user/wallet/request-withdraw
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "amount": 10,
+    "description": "my first withdraw request."
+  }
+}
