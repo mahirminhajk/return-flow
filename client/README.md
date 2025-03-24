@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# RETURN FLOW CLIENT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Install
+i use pnpm as package manager. you can use npm or yarn as well.
+install pnpm globally
+```bash
+$ npm i -g pnpm
+```
+install dependencies
+```bash
+$ pnpm i
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Commands
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### Run
+```bash
+$ pnpm run dev
 ```
+
+### Build
+```bash
+$ pnpm run build
+```
+
+## Pages And Usage
+- [/login](http://localhost:5173/login) - User Login page
+- [/admin/login](http://localhost:5173/admin/login) - Admin Login page
+- [/](http://localhost:5173/) - Dashboard page
+- [/admin/user](http://localhost:5173/admin/user) - Admin User page((Login as admin))
+- /admin/user/:id - Admin User page((Login as admin))
+- [/admin/notification](http://localhost:5173/admin/notification) - Admin Notification page((Login as admin))
+- [/admin/settings](http://localhost:5173/admin/settings) - Admin Settings page(Login as admin)
+
+- [/wallet](http://localhost:5173/wallet) - User Wallet page(Login as user)
+- [/wallet/request-withdrawal](http://localhost:5173/wallet/request-withdrawal) - User Request Withdrawal page(Login as user)
