@@ -16,7 +16,6 @@ function createAdmin() {
         phone: phone,
         password: hashedPassword,
     }
-    //TODO: change the URI to your database URI
     const URI = "mongodb://localhost:27017/return-flow";
     mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true })
         .then(() => {
