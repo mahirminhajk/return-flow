@@ -10,7 +10,7 @@ Additionally, users can request withdrawals from their wallets(and provide addit
 This project aims to offer a secure, automated, and efficient way to manage investment payouts while maintaining transparency between admins and users.
 
 ## 2. [Technologies](#technologies)
-- **Frontend**: React, TypeScript, shadcnui, tanwindcss, tankstack/react-query.
+- **Frontend**: React, TypeScript, shadcnui, tailwindcss, tanstack/react-query.
 - **Backend**: Node.js, Express, TypeScript, MongoDB, Mongoose, cron, jsonwebtoken.
 - **Testing**: Jest, supertest.
 - **Playground**: [Bruno](https://www.usebruno.com/), MongoDB Compass.
@@ -52,7 +52,22 @@ pnpm start
 cd client
 pnpm run dev
 ```
-## 4. [Contributing](#contributing)
+
+7. Check API health:
+- Open [localhost:8080/api/health](localhost:8080/api/health) in your browser.
+
+8. Login As Admin:
+- Open [http://localhost:5173/admin/login](hhttp://localhost:5173/admin/login) in your browser.
+- Use the following credentials:
+  - Phone: `9876543210`
+  - Password: `123456789`
+
+
+## 4. [Documentation](#documentation)
+- [API Documentation](api/README.md)
+- [Client Documentation](client/README.md)
+
+## 5. [Contributing](#contributing)
 Contributions are welcome! Please follow these steps:
 
 1. Fork the repository
@@ -68,5 +83,5 @@ Contributions are welcome! Please follow these steps:
 
 Please make sure your PR follows our coding standards and includes appropriate documentation.
 
-## 5. [License](#license)
+## 6. [License](#license)
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
